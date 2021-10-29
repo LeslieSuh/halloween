@@ -1,3 +1,64 @@
 .hidden {
   display: none;
 }
+
+body {
+  display: grid;
+  place-items: center;
+  height: 120vh;
+  background: #CB4603;
+  font-family: cursive;
+}
+
+.wrapper {
+  position: relative;
+  height: 55px;
+  border-radius: .7em;
+  border: 2px solid #fff;
+  background: #CB4603;
+}
+
+input {
+  position: relative;
+  width: 160px;
+  height: 55px;
+  background: transparent;
+  border: 0;
+  font-family: 'Nanum Pen Script', cursive;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-indent: .75rem;
+  color: #fff;
+  outline: none;
+}
+
+input[type="submit"]{
+  position: relative;
+  text-align: right;
+  width: 130px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 1.4em;
+}
+
+.placeholder {
+  color: #fff;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  padding: 0 .2em;
+  font-weight: bold;
+  transform: translate(.5em, .8em);
+  transform-origin: 0% 0%;
+  background: #CB4603;
+  pointer-events: none;
+  transition: transform .3s ease
+}
+
+
+input:focus + .placeholder {
+  transform: translate(.625rem, -.7em); scale(0.8);
+}
