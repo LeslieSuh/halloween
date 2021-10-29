@@ -1,5 +1,5 @@
-const toDoForm = document.getElementById("todo_form");
-const toDoInput = document.querySelector("#todo_form input");
+const toDoForm = document.getElementById("todo-form");
+const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 const TODOS_KEY = "todos";
 let toDos = [];

@@ -17,14 +17,15 @@ function paintGreetings(username) {
   greeting.innerText = `👻 Hello, ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
   clock.classList.remove(HIDDEN_CLASSNAME);
-  todo_form.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
+  document.getElementById("todo-form").style.display="none";
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   paintGreetings(savedUsername);
+  document.getElementById("todo-form").style.display="block";
 }
