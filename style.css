@@ -61,3 +61,10 @@ input[type="submit"] {
 input:focus + .placeholder {
   transform: translate(0.625rem, -0.7em) scale(0.8);
 }
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 5vw;
+  color: antiquewhite;
+}
