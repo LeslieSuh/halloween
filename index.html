@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Vanilla JS challenge</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+    </style>
+    <title>TodoList</title>
   </head>
   <body>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="Tell me your name!"
-      />
-      <input type="submit" value="Log In" />
+    <form class="hidden" class="wrapper" id="login-form">
+      <input required maxlength="15" type="text" />
+      <div class="placeholder">What is your name?</div>
+      <input type="submit" value="Enter" />
     </form>
     <h1 id="greeting" class="hidden"></h1>
-    <script src="src/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
