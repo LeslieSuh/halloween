@@ -16,6 +16,8 @@ function onLoginSubmit(event) {
 function paintGreetings(username) {
   greeting.innerText = `👻 Hello, ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  clock.classList.remove(HIDDEN_CLASSNAME);
+  todo_form.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
