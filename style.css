@@ -1,10 +1,16 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import "reset.css";
+
 .hidden {
   display: none;
 }
 
 body {
-  display: grid;
-  place-items: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   height: 100vh;
   background: #cb4603;
   font-family: "Nanum Pen Script", cursive;
@@ -63,20 +69,32 @@ input:focus + .placeholder {
   transform: translate(0.625rem, -0.7em) scale(0.8);
 }
 
+h1 {
+  font-size: 45.5px;
+}
+
 h2 {
-  width: 100%;
-  text-align: center;
-  font-size: 5vw;
+  position: absolute;
+  width: 20%;
+  font-size: 80px;
   color: antiquewhite;
+  top: 3%;
+  right: 3%;
+}
+
+.todo-form--background {
+  background: #000000;
+  border-radius: 7px;
+}
+
+iframe {
+  border-radius: 50px;
 }
 
 .wrapper_2 {
-  background: #000000;
   max-width: 400px;
-  width: 100%;
-  margin: 120px auto;
+  width: 400px;
   padding: 20px;
-  border-radius: 5px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -86,7 +104,6 @@ h2 {
 }
 
 .wrapper_2 #todo-form input {
-  margin: 10px 0;
   width: 100%;
   display: flex;
   height: 45px;
@@ -111,7 +128,6 @@ button {
   border: none;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 19px;
 }
 
@@ -121,18 +137,22 @@ span {
 }
 
 ul {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 14px;
+  line-height: 25px;
+  padding-left: 37px;
 }
 
 .container {
   width: 300px;
   background-color: #fff;
-
-  display: block;
-  margin: 0 auto;
-
   border-radius: 10px;
   padding-bottom: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
 .app-title {
@@ -144,7 +164,6 @@ ul {
 .app-title p {
   text-align: center;
   padding: 15px;
-  margin: 0 auto;
   font-size: 1.2em;
   color: #293251;
 }
@@ -157,7 +176,6 @@ ul {
 .notification p {
   color: #721c24;
   font-size: 1.2em;
-  margin: 0;
   text-align: center;
   padding: 10px 0;
 }
@@ -174,8 +192,6 @@ ul {
 }
 
 .temperature-value p {
-  padding: 0;
-  margin: 0;
   color: #000000;
   font-size: 3em;
   text-align: center;
@@ -189,19 +205,13 @@ ul {
 }
 
 .temperature-description p {
-  padding: 8px;
-  margin: 0;
   color: #9c2510;
-  text-align: center;
   font-size: 1.9em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .location p {
-  margin: 0;
-  padding: 0;
   color: #9c2510;
-  text-align: center;
   font-size: 3em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -213,4 +223,15 @@ body img {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.app-title {
+  font-size: 21px;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }

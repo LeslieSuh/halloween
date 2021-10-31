@@ -18,6 +18,7 @@ function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
   clock.classList.remove(HIDDEN_CLASSNAME);
   document.getElementById("todo-form").style.display = "block";
+  document.querySelector(".container").style.display = "block";
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -25,6 +26,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   document.getElementById("todo-form").style.display = "none";
+  document.querySelector(".container").style.display = "none";
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   paintGreetings(savedUsername);

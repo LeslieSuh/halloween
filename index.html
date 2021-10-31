@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
-    </style>
     <title>TodoList</title>
   </head>
   <body>
@@ -16,9 +13,10 @@
       <input type="submit" value="Enter" />
     </form>
     <h1 id="greeting" class="hidden"></h1>
+    <h2 class="clock hidden" id="clock">00:00</h2>
     <div class="container">
       <div class="app-title">
-        <p>How's the weather?</p>
+        <p><b>How's the weather?</b></p>
       </div>
       <div class="notification"></div>
       <div class="weather-container">
@@ -33,11 +31,25 @@
         </div>
       </div>
     </div>
-    <form class="wrapper_2" id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <h2 class="clock hidden" id="clock">00:00</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/Mk9GX_DPj8Q?autoplay=1&mute=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="todo-form--background">
+      <form class="wrapper_2" id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
     <script src="index.js"></script>
     <script src="clock.js"></script>
     <script src="backgrounds.js"></script>
