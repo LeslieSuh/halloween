@@ -40,9 +40,9 @@ function onGeoError() {
 }
 
 function displayWeather() {
-  tempElement.innerHTML = `${weather.temperature.value}°c`;
+  tempElement.innerHTML = `🌡️ ${weather.temperature.value}°c`;
   descElement.innerHTML = weather.description;
-  locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+  locationElement.innerHTML = `@${weather.city}, ${weather.country}`;
 }
 
 navigator.geolocation.getCurrentPosition(setPosition, onGeoError);

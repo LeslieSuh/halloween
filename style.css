@@ -1,4 +1,5 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap");
 @import "reset.css";
 
 .hidden {
@@ -13,7 +14,7 @@ body {
   align-items: center;
   height: 100vh;
   background: #cb4603;
-  font-family: "Nanum Pen Script", cursive;
+  font-family: "Black And White Picture", sans-serif;
   color: whitesmoke;
 }
 
@@ -31,7 +32,7 @@ input {
   height: 55px;
   background: transparent;
   border: 0;
-  font-family: "Nanum Pen Script", cursive;
+  font-family: "Black And White Picture", sans-serif;
   font-size: 1.5em;
   text-indent: 0.75rem;
   color: whitesmoke;
@@ -45,7 +46,7 @@ input[type="submit"] {
   height: 50px;
   border: none;
   outline: none;
-  font-family: "Nanum Pen Script", cursive;
+  font-family: "Black And White Picture", sans-serif;
   font-size: 1.4em;
 }
 
@@ -75,9 +76,9 @@ h1 {
 
 h2 {
   position: absolute;
-  width: 20%;
-  font-size: 80px;
-  color: antiquewhite;
+  width: 15%;
+  font-size: 110px;
+  color: rgb(206, 62, 5);
   top: 3%;
   right: 3%;
 }
@@ -88,13 +89,14 @@ h2 {
 }
 
 iframe {
+  display: flex;
   border-radius: 50px;
 }
 
 .wrapper_2 {
   max-width: 400px;
   width: 400px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -147,25 +149,12 @@ ul {
 
 .container {
   width: 300px;
-  background-color: #fff;
-  border-radius: 10px;
+  border-radius: 40px;
   padding-bottom: 50px;
   position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-.app-title {
-  width: 300px;
-  height: 50px;
-  border-radius: 10px 10px 0 0;
-}
-
-.app-title p {
-  text-align: center;
-  padding: 15px;
-  font-size: 1.2em;
-  color: #293251;
+  top: 160px;
+  right: 20px;
+  text-align: right;
 }
 
 .notification {
@@ -180,40 +169,34 @@ ul {
   padding: 10px 0;
 }
 
-.weather-container {
-  width: 300px;
-  height: 260px;
-  background-color: #f8e3cf;
-}
-
 .temperature-value {
   width: 300px;
   height: 60px;
 }
 
 .temperature-value p {
-  color: #000000;
-  font-size: 3em;
+  color: #cb4603;
+  font-size: 2.8em;
   text-align: center;
   cursor: pointer;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Stylish", sans-serif;
 }
 
 .temperature-value span {
-  color: #000000;
+  color: #cb4603;
   font-size: 0.9em;
 }
 
 .temperature-description p {
-  color: #9c2510;
+  color: #cb4603;
   font-size: 1.9em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Stylish", sans-serif;
 }
 
 .location p {
-  color: #9c2510;
-  font-size: 3em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #cb4603;
+  font-size: 1.9em;
+  font-family: "Stylish", sans-serif;
 }
 
 body img {
