@@ -14,7 +14,7 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-  greeting.innerText = `👻 Hello, ${username}`;
+  greeting.innerText = `👻 Trick or Treat, ${username}!`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
   clock.classList.remove(HIDDEN_CLASSNAME);
   document.getElementById("todo-form").style.display = "block";
