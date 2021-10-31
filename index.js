@@ -20,6 +20,7 @@ function paintGreetings(username) {
   document.getElementById("todo-form").style.display = "block";
   document.querySelector(".container").style.display = "block";
   document.querySelector("iframe").style.display = "block";
+  document.querySelector(".decisionMaker").style.display = "flex";
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -29,6 +30,7 @@ if (savedUsername === null) {
   document.getElementById("todo-form").style.display = "none";
   document.querySelector(".container").style.display = "none";
   document.querySelector("iframe").style.display = "none";
+  document.querySelector(".decisionMaker").style.display = "none";
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   paintGreetings(savedUsername);

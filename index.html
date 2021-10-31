@@ -28,6 +28,25 @@
         </div>
       </div>
     </div>
+    <div class="decisionMaker">
+      <div class="options">
+        <h3>Jot down your Options</h3>
+        <input type="text" id="userinput" placeholder="Write them here" />
+        <input
+          class="choiceBtn"
+          type="submit"
+          value="Submit"
+          id="addChoice"
+          onclick="picker()"
+        />
+        <p id="selection"></p>
+      </div>
+      <div id="pick">
+        <h4>The winner is...</h4>
+        <p id="winner"></p>
+        <button class="pickBtn" onclick="winner()">Click</button>
+      </div>
+    </div>
     <iframe
       width="560"
       height="315"
@@ -52,5 +71,6 @@
     <script src="backgrounds.js"></script>
     <script src="todo.js"></script>
     <script src="weather.js"></script>
+    <script src="choice.js"></script>
   </body>
 </html>
